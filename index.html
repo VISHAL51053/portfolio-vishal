@@ -3,75 +3,287 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10110f">
-  <meta name="description" content="The portfolio of an Information Technology student at Kongu Engineering College.">
-  <title>Vishal Ragav VS — Portfolio</title>
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Vishal Ragav VS is an Information Technology student at Kongu Engineering College, exploring AI, full-stack development and creative technology through practical projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vishal Ragav VS | Curious by code">
+  <meta property="og:description" content="An IT student building thoughtful digital experiences and practical tools.">
+  <meta property="og:image" content="https://uai1d.aiccloud.online/icon-512.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Vishal Ragav VS | Curious by code</title>
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#10110f;--panel:#181a17;--ink:#f2f1e9;--muted:#a1a39b;--lime:#c8ff4d;--line:#343630;--orange:#ff7855;--mono:'DM Mono',monospace;--sans:'Space Grotesk',sans-serif}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);overflow-x:hidden}a{color:inherit;text-decoration:none}button{font:inherit}.grain{position:fixed;inset:0;z-index:5;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
-    .wrap{width:min(1160px,calc(100% - 48px));margin:auto}.mono{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:700;letter-spacing:-.06em;font-size:18px}.brand span{color:var(--lime)}.navlinks{display:flex;gap:31px;align-items:center}.navlinks a{font-size:13px;color:#c9cac2;transition:color .2s}.navlinks a:hover{color:var(--lime)}.nav-cta{border:1px solid var(--line);padding:11px 16px;border-radius:3px!important;color:var(--lime)!important}
-    .hero{min-height:690px;padding:76px 0 64px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:32px;position:relative}.eyebrow{display:flex;align-items:center;gap:10px;margin-bottom:28px}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 15px #c8ff4d88}.hero h1{font-size:clamp(64px,9vw,122px);line-height:.84;letter-spacing:-.095em;margin:0 0 27px;font-weight:600}.hero h1 .outline{color:transparent;-webkit-text-stroke:1px #e8e9df}.hero h1 .accent{color:var(--lime)}.intro{font-size:17px;line-height:1.65;color:#b5b7ae;max-width:490px;margin:0 0 30px}.intro strong{color:var(--ink);font-weight:500}.actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;gap:14px;background:var(--lime);color:#13150e;padding:15px 19px;font-size:13px;font-weight:700;border-radius:3px;transition:transform .2s,box-shadow .2s}.button:hover{transform:translateY(-3px);box-shadow:0 10px 35px #c8ff4d22}.textlink{font-size:13px;color:#d1d2ca}.arrow{font-size:18px}.hero-art{height:445px;position:relative;display:grid;place-items:center}.orbit{position:absolute;width:360px;height:360px;border:1px solid #383a33;border-radius:50%;animation:spin 42s linear infinite}.orbit:before,.orbit:after{content:'';position:absolute;border:1px solid #2c2e29;border-radius:50%;inset:26px}.orbit:after{inset:63px}.orbit-dot{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--lime);top:38px;left:75px;box-shadow:0 0 18px var(--lime)}@keyframes spin{to{transform:rotate(360deg)}}.idea-lab{position:relative;z-index:1;width:min(360px,90%);min-height:320px;padding:23px;background:linear-gradient(145deg,#20221d,#151713);border:1px solid #42453b;box-shadow:14px 16px 0 var(--lime);display:flex;flex-direction:column;justify-content:space-between}.lab-head,.lab-foot{display:flex;justify-content:space-between;align-items:center}.lab-live{font-family:var(--mono);font-size:9px;color:var(--lime);letter-spacing:.12em}.lab-live:before{content:'●';font-size:8px;margin-right:8px}.lab-index{font-family:var(--mono);font-size:10px;color:var(--muted)}.lab-content{padding:25px 0}.lab-content h2{font-size:38px;letter-spacing:-.08em;margin:0 0 10px}.lab-content p{font-size:13px;line-height:1.65;color:#b4b6ad;margin:0;max-width:270px}.lab-foot{border-top:1px solid var(--line);padding-top:17px}.lab-tabs{display:flex;gap:7px}.lab-tab{width:29px;height:29px;background:transparent;border:1px solid #42443c;color:#aaa;font-family:var(--mono);font-size:10px;cursor:pointer}.lab-tab:hover,.lab-tab[aria-pressed="true"]{background:var(--lime);border-color:var(--lime);color:#151710}.lab-hint{font-family:var(--mono);font-size:9px;color:var(--muted)}.scroll-note{position:absolute;bottom:10px;left:0;display:flex;gap:11px;align-items:center}.scroll-line{height:1px;width:34px;background:var(--lime)}
-    .build-card{position:relative;z-index:1;width:min(360px,90%);padding:22px;background:linear-gradient(145deg,#20221d,#151713);border:1px solid #42453b;box-shadow:14px 16px 0 var(--lime)}.build-head,.build-tags{display:flex;align-items:center;justify-content:space-between;gap:10px}.build-head>span:first-child{font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--lime)}.build-head i{display:inline-block;width:7px;height:7px;margin-right:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 10px var(--lime)}.build-head .mono{font-size:9px}.build-main{padding:27px 0 20px}.build-label{font-size:9px}.build-main h2{font-size:40px;letter-spacing:-.08em;line-height:.95;margin:11px 0}.build-main h2 span{color:var(--lime)}.build-main p{max-width:280px;color:#b4b6ad;font-size:12px;line-height:1.6;margin:0}.code-window{background:#11130f;border:1px solid #30332c;margin-bottom:17px}.code-top{display:flex;justify-content:space-between;border-bottom:1px solid #30332c;padding:8px 11px;color:#898c81;font:9px var(--mono)}.code-window code{display:block;padding:11px;color:#c8cbc0;font:10px/1.8 var(--mono)}.code-window code b{color:#c8ff4d}.code-window code em{color:#ff9b77;font-style:normal}.code-window code strong{color:#e9d66c}.build-tags{justify-content:flex-start;flex-wrap:wrap}.build-tags span{font:8px var(--mono);letter-spacing:.04em;color:#b8bbb0;border:1px solid #41443b;padding:7px 8px}.build-tags span:last-child{color:var(--lime);margin-left:auto}.ticker{border-block:1px solid var(--line);overflow:hidden;background:#151713}.ticker-track{display:flex;width:max-content;animation:marquee 28s linear infinite}.ticker span{padding:18px 22px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:#b4b6ad;text-transform:uppercase}.ticker b{color:var(--lime);font-size:15px;margin-left:22px}@keyframes marquee{to{transform:translateX(-50%)}}
-    section{scroll-margin-top:32px}.section{padding:108px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:45px}.kicker{margin-bottom:12px}.section h2{font-size:clamp(42px,6vw,70px);line-height:.95;letter-spacing:-.08em;margin:0;font-weight:600}.section h2 em{font-style:normal;color:var(--lime)}.section-note{max-width:260px;line-height:1.6;color:var(--muted);font-size:13px;margin:0 0 3px}
-    .about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:90px}.about-tag{height:100%;min-height:290px;background:var(--lime);color:#14160f;padding:25px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.about-tag:after{content:'✳';position:absolute;font-size:190px;right:-12px;bottom:-68px;opacity:.13;line-height:1}.about-tag .mono{color:#464a36}.about-tag strong{font-size:39px;line-height:.94;letter-spacing:-.08em;max-width:220px;z-index:1}.about-copy p{font-size:18px;line-height:1.72;color:#b9bbb2;margin:0 0 22px}.about-copy p:first-child{color:var(--ink)}.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:32px;padding-top:20px;gap:14px}.fact strong{display:block;font-size:14px;margin-top:8px;font-weight:500}.fact .mono{font-size:9px}
-    .projects{background:#151713;border-block:1px solid var(--line)}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project{min-height:290px;border:1px solid #363831;background:#1b1d19;padding:25px;display:flex;flex-direction:column;justify-content:space-between;transition:border-color .2s,transform .2s;position:relative;overflow:hidden}.project:hover{border-color:var(--lime);transform:translateY(-4px)}.project-top{display:flex;justify-content:space-between;align-items:center}.project-number{font-family:var(--mono);font-size:11px;color:var(--lime)}.project-type{font-family:var(--mono);font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.project h3{font-size:32px;letter-spacing:-.07em;margin:0 0 10px}.project p{color:#aeb0a7;font-size:14px;line-height:1.6;max-width:390px;margin:0}.tags{display:flex;gap:8px;margin-top:20px;flex-wrap:wrap}.tags span{font-family:var(--mono);font-size:9px;color:#d0d1c8;border:1px solid #42443c;padding:7px 9px}.project-symbol{position:absolute;right:24px;top:70px;font-size:86px;color:#c8ff4d19;line-height:1}.project-link{align-self:flex-end;color:var(--lime);font-size:20px}
-    .achievement-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.achievement{position:relative;min-height:220px;padding:22px;border:1px solid #363831;background:#181a17;display:flex;flex-direction:column;justify-content:space-between;transition:border-color .2s,transform .2s}.achievement:hover{border-color:var(--lime);transform:translateY(-3px)}.achievement-feature{grid-row:span 2;min-height:100%;background:linear-gradient(145deg,#1c2117,#171915);border-color:#515843}.achievement-top{display:flex;justify-content:space-between;align-items:center;gap:10px}.achievement-top .mono{font-size:9px;color:var(--lime)}.achievement-mark{font:11px var(--mono);color:#7d8076}.achievement h3{font-size:25px;line-height:1.05;letter-spacing:-.06em;margin:0 0 10px}.achievement-feature h3{font-size:46px;color:var(--lime)}.achievement p{font-size:13px;color:#b4b6ad;line-height:1.65;margin:0 0 15px;max-width:520px}.achievement-meta{font:9px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:#85887f}.achievement-arrow{position:absolute;right:22px;bottom:21px;color:var(--lime);font-size:20px}.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px}.skill-list{display:flex;flex-wrap:wrap;gap:10px;align-content:start}.skill{border:1px solid #393b35;background:#181a17;padding:13px 15px;font-size:13px;color:#dedfd7;transition:.2s}.skill:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-2px)}.skill-group{padding:23px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:115px 1fr;gap:20px}.skill-group:first-child{border-top:0;padding-top:0}.skill-group p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}
-    .contact{padding:82px 0 75px;background:var(--lime);color:#12140e}.contact .mono{color:#535a43}.contact h2{font-size:clamp(54px,9vw,112px);line-height:.85;letter-spacing:-.095em;margin:20px 0 31px;max-width:850px}.contact-row{display:flex;justify-content:space-between;align-items:end;gap:24px;border-top:1px solid #24281555;padding-top:22px}.contact-row p{margin:0;font-size:14px}.email-address{display:inline-block;margin-top:10px;font-weight:700;text-decoration:underline;text-underline-offset:4px}.contact-links{display:flex;gap:10px}.contact-links a{padding:12px 16px;border:1px solid #23261888;font-size:12px;font-weight:600;transition:.2s}.contact-links a:hover{background:#11130d;color:var(--lime)}footer{padding:20px 0;display:flex;justify-content:space-between;color:#777970;font-family:var(--mono);font-size:9px;letter-spacing:.08em;text-transform:uppercase}.top{color:var(--lime)}
-    .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:translateY(0)}
-    @media(max-width:760px){.wrap{width:min(100% - 36px,560px)}.nav{height:68px}.navlinks{gap:15px}.navlinks a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding:62px 0 65px;min-height:auto}.hero h1{font-size:clamp(70px,17vw,112px)}.hero-art{height:350px;margin-top:10px}.orbit{width:290px;height:290px}.build-card{width:min(340px,86%);padding:19px;box-shadow:10px 12px 0 var(--lime)}.build-main{padding:20px 0 16px}.build-main h2{font-size:34px}.scroll-note{position:static;grid-row:auto;margin-top:22px}.section{padding:76px 0}.section-head{display:block}.section-note{margin-top:18px}.about-grid,.skills-layout{grid-template-columns:1fr;gap:30px}.about-tag{min-height:225px}.project-grid{grid-template-columns:1fr}.achievement-grid{grid-template-columns:1fr}.achievement-feature{grid-row:auto;min-height:250px}.project{min-height:270px}.skill-group{grid-template-columns:85px 1fr}.contact{padding:68px 0 50px}.contact-row{align-items:start;flex-direction:column}.contact-links{flex-wrap:wrap}footer{gap:15px;flex-wrap:wrap}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/lenis/lenis.css">
+  <link rel="stylesheet" href="styles.css?v=20261118-scenes4">
+  <script defer src="vendor/gsap/gsap.min.js"></script>
+  <script defer src="vendor/gsap/ScrollTrigger.min.js"></script>
+  <script defer src="portfolio.js?v=20261118-scenes7"></script>
 </head>
 <body>
-  <div class="grain"></div>
-  <header class="wrap nav">
-    <a class="brand" href="#home">vishal<span>ragav</span>®</a>
-    <nav class="navlinks" aria-label="Main navigation"><a href="#about">About</a><a href="#work">Work</a><a href="#achievements">Achievements</a><a href="#skills">Skills</a><a class="nav-cta" href="#contact">Let’s talk ↗</a></nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#home" aria-label="Vishal Ragav VS, home">VISHAL<span>RAGAV</span><sup>VS</sup></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#craft">What I do</a>
+      <a href="#work">Selected work</a>
+      <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
   </header>
-  <main>
-    <section class="wrap hero" id="home">
-      <div>
-        <div class="eyebrow mono"><span class="dot"></span> IT student · Kongu Engineering College</div>
-        <h1>Curious<br><span class="outline">by</span> code<span class="accent">.</span></h1>
-        <p class="intro">Hey, I’m <strong>Vishal Ragav VS</strong> — a second-year Information Technology student turning curiosity into <strong>useful, thoughtful digital experiences.</strong></p>
-        <div class="actions"><a class="button" href="#work">Explore my work <span class="arrow">↘</span></a><a class="textlink" href="#about">A little about me <span class="arrow">↗</span></a></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+    <a href="#about">About</a><a href="#craft">What I do</a><a href="#journey">My journey</a><a href="#work">Selected work</a><a href="#achievements">Milestones</a><a href="#contact">Contact</a>
+  </nav>
+
+  <main id="main-content" class="page-content">
+    <section class="hero wrap world-chapter" id="home" data-world-chapter="0">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> INFORMATION TECHNOLOGY STUDENT <span class="eyebrow-separator">/</span> KONGU ENGINEERING COLLEGE</p>
+        <h1 class="hero-title" data-glitch="Curious by code"><span>Curious</span><span class="hero-title-second"><i>by</i> code<span class="title-period">.</span></span></h1>
+        <p class="hero-name">VISHAL RAGAV VS <span>·</span> ERODE, INDIA</p>
+        <p class="hero-intro">I turn curiosity into useful, thoughtful digital experiences. Right now, that means learning by building across full-stack development, AI and creative technology.</p>
+        <div class="hero-actions">
+          <a class="action-link action-primary magnetic" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+          <a class="action-link action-secondary magnetic" href="mailto:vishalragav51053@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <div class="hero-art"><div class="orbit" aria-hidden="true"><span class="orbit-dot"></span></div><article class="build-card" aria-label="Vishal's developer status"><div class="build-head"><span><i></i> CURRENTLY BUILDING</span></div><div class="build-main"><span class="build-label mono">A SMALL IDEA, IN PROGRESS</span><h2>Learning<br>by making<span>.</span></h2><p>Exploring how code can turn everyday problems into thoughtful tools.</p></div><div class="code-window"><div class="code-top"><span>curiosity.js</span><span>•••</span></div><code><b>const</b> nextStep = <em>() =&gt;</em> {<br>&nbsp;&nbsp;<strong>keepBuilding</strong>();<br>};</code></div><div class="build-tags"><span>WEB DEV</span><span>PROBLEM SOLVING</span><span>ALWAYS LEARNING ↗</span></div></article></div>
-      <div class="scroll-note mono"><span class="scroll-line"></span> scroll to explore</div>
-    </section>
-    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>Information Technology<b>✳</b></span><span>Build · Learn · Repeat<b>✳</b></span><span>Ideas grow when you keep exploring<b>✳</b></span><span>Make it. Learn from it. Make it better.<b>✳</b></span><span>Information Technology<b>✳</b></span><span>Build · Learn · Repeat<b>✳</b></span><span>Ideas grow when you keep exploring<b>✳</b></span><span>Make it. Learn from it. Make it better.<b>✳</b></span></div></div>
-    <section class="wrap section" id="about"><div class="section-head reveal"><div><div class="mono kicker">01 / The person behind the pixels</div><h2>A bit about <em>me.</em></h2></div><p class="section-note">Student today. Problem solver every day. Still curious about what’s possible.</p></div>
-      <div class="about-grid reveal"><div class="about-tag"><span class="mono">CURRENTLY IN MY</span><strong>BUILDING<br>ERA ✳</strong><span class="mono">ERODE, TAMIL NADU · INDIA</span></div><div class="about-copy"><p>I’m pursuing my degree in Information Technology at Kongu Engineering College, where I’m learning how ideas become real products — one concept, experiment, and late-night bug fix at a time.</p><p>I enjoy exploring web development, solving problems, and making technology feel a little more human. I’m here to learn by building, collaborate with good people, and keep getting better.</p><div class="facts"><div class="fact"><span class="mono">01 / STUDY</span><strong>2nd year · IT</strong></div><div class="fact"><span class="mono">02 / COLLEGE</span><strong>Kongu Engineering College</strong></div><div class="fact"><span class="mono">03 / FOCUS</span><strong>Learn by making</strong></div></div></div></div>
-    </section>
-    <section class="projects" id="work"><div class="wrap section"><div class="section-head reveal"><div><div class="mono kicker">02 / Things I’ve been making</div><h2>Selected <em>work.</em></h2></div><p class="section-note">A selection of web projects built to solve practical problems across location, agriculture, sports, and construction.</p></div>
-      <div class="project-grid reveal">
-        <article class="project"><div class="project-top"><span class="project-number">PROJECT / 01</span><span class="project-type">Geolocation · Web</span></div><span class="project-symbol">◎</span><div><h3>GeoSense</h3><p>A location-saving web experience. Open the project to explore how it works.</p><div class="tags"><span>LOCATION</span><span>WEB APP</span><span>INTERACTIVE</span></div></div><a class="project-link" href="https://geosense-new.onrender.com/savelocation.html" target="_blank" rel="noreferrer" aria-label="Open GeoSense">↗</a></article>
-        <article class="project"><div class="project-top"><span class="project-number">PROJECT / 02</span><span class="project-type">AgriTech · Platform</span></div><span class="project-symbol">🌾</span><div><h3>AgriNex</h3><p>A direct-trade agriculture platform connecting farmers with buyers, with mandi benchmarks, stakeholder portals, bidding, and escrow-focused trade flows.</p><div class="tags"><span>AGRITECH</span><span>MARKETPLACE</span><span>ROLE PORTALS</span></div></div><a class="project-link" href="https://agrinex-w4fk.onrender.com/" target="_blank" rel="noreferrer" aria-label="Open AgriNex">↗</a></article>
-        <article class="project"><div class="project-top"><span class="project-number">PROJECT / 03</span><span class="project-type">Sports · Booking</span></div><span class="project-symbol">🏸</span><div><h3>RSA Bookings</h3><p>A court reservation page for Rainbow Sports Academy. Players can choose a date, time, court, and player count to request a session.</p><div class="tags"><span>BOOKING FLOW</span><span>BADMINTON</span><span>RESPONSIVE UI</span></div></div><a class="project-link" href="https://rsabookings.gurubaranbuilders.co.in/" target="_blank" rel="noreferrer" aria-label="Open RSA Bookings">↗</a></article>
-        <article class="project"><div class="project-top"><span class="project-number">PROJECT / 04</span><span class="project-type">Construction · ERP</span></div><span class="project-symbol">▦</span><div><h3>Gurubaran Builders</h3><p>A personal construction accounts portal with secure sign-in and an overview for sites, workforce, outstanding balances, and weekly labor costs.</p><div class="tags"><span>CONSTRUCTION ERP</span><span>ACCOUNTS</span><span>DASHBOARD</span></div></div><a class="project-link" href="https://accounts.gurubaranbuilders.co.in//" target="_blank" rel="noreferrer" aria-label="Open Gurubaran Builders">↗</a></article>
-      </div></div></section>
-    <section class="wrap section" id="achievements"><div class="section-head reveal"><div><div class="mono kicker">03 / Milestones & learning</div><h2>Achievements <em>& more.</em></h2></div><p class="section-note">A few milestones that reflect my curiosity, teamwork, and continued learning.</p></div>
-      <div class="achievement-grid reveal">
-        <article class="achievement achievement-feature"><div class="achievement-top"><span class="achievement-mark">01</span><span class="mono">STARTUP PITCH · JARVIS'26</span></div><div><h3>AgriNex</h3><p>Presented AgriNex, an idea for connecting farmers directly with buyers through a transparent digital agriculture marketplace, at the JARVIS'26 Startup Pitch event.</p><span class="achievement-meta">Mobile Application Development Club · Kongu Engineering College</span></div><span class="achievement-arrow">↗</span></article>
-        <article class="achievement"><div class="achievement-top"><span class="achievement-mark">02</span><span class="mono">HACKATHON</span></div><div><h3>HackITon'26</h3><p>Participated in a 24-hour National Level Hackathon hosted by KPR Institute of Engineering and Technology with IEEE student communities.</p><span class="achievement-meta">October 2026</span></div></article>
-        <article class="achievement"><div class="achievement-top"><span class="achievement-mark">03</span><span class="mono">NPTEL · ELITE</span></div><div><h3>Human Computer Interaction</h3><p>Completed the NPTEL online certification course with a consolidated score of 91%.</p><span class="achievement-meta">12-week course · Jan–Apr 2026</span></div></article>
-        <article class="achievement"><div class="achievement-top"><span class="achievement-mark">04</span><span class="mono">WORKSHOP · FLUTTER</span></div><div><h3>Mobile App Development</h3><p>Participated in a hands-on Flutter workshop organized by the Mobile Application Development Club.</p><span class="achievement-meta">Kongu Engineering College · August 2026</span></div></article>
-        <article class="achievement"><div class="achievement-top"><span class="achievement-mark">05</span><span class="mono">30 HOURS · COURSE</span></div><div><h3>Cloud Essentials</h3><p>Completed a 30-hour non-formal course offered by the Department of Information Technology.</p><span class="achievement-meta">Kongu Engineering College · 2026</span></div></article>
+      <div class="hero-scene scene-host" data-scene="hero" aria-hidden="true">
+        <div class="scene-poster poster-hero"><span class="poster-orbit"></span><span class="poster-core"></span><span class="poster-orbit-dot"></span></div>
+        <canvas class="world-canvas" id="world-canvas" aria-hidden="true"></canvas>
       </div>
-    </section>    <section class="wrap section" id="skills"><div class="section-head reveal"><div><div class="mono kicker">04 / My growing toolkit</div><h2>Skills in <em>progress.</em></h2></div><p class="section-note">I believe the best skill is staying curious. Here’s what I’m exploring.</p></div>
-      <div class="skills-layout reveal"><div class="skill-list"><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">JavaScript</span><span class="skill">C Programming</span><span class="skill">Java</span><span class="skill">Python</span><span class="skill">Git & GitHub</span><span class="skill">Responsive Design</span><span class="skill">Problem Solving</span><span class="skill">UI Thinking</span></div><div><div class="skill-group"><span class="mono">LEARNING</span><p>Data structures, algorithms, and the foundations of writing clean code.</p></div><div class="skill-group"><span class="mono">BUILDING</span><p>Small web experiences that are accessible, responsive, and pleasant to use.</p></div><div class="skill-group"><span class="mono">ALWAYS</span><p>Asking better questions, trying new tools, and learning from the people around me.</p></div></div></div>
+      <div class="hero-aside" aria-label="Current focus">
+        <span class="mono-label">CURRENT CHAPTER</span>
+        <strong>Learning<br>by making.</strong>
+        <span class="hero-aside-rule" aria-hidden="true"></span>
+        <span class="mono-label">SCROLL TO EXPLORE <b>↓</b></span>
+      </div>
+      <span class="hero-coordinate mono-label" aria-hidden="true">11°20' N&nbsp; 77°43' E</span>
     </section>
-    <section class="contact" id="contact"><div class="wrap reveal"><div class="mono">05 / Have an idea? Let’s make it real.</div><h2>Let’s build<br>something good.</h2><div class="contact-row"><p>Open to learning, collaborating, and connecting.<br>Say hello — I’d love to hear from you.</p><div class="contact-links"><a href="https://mail.google.com/mail/?view=cm&to=vishalragav51053%40gmail.com">EMAIL ↗</a><a href="https://www.linkedin.com/in/vishal-ragav-vs-17783539a" target="_blank" rel="noreferrer">LINKEDIN ↗</a><a href="https://github.com/VISHAL51053" target="_blank" rel="noreferrer">GITHUB ↗</a></div></div></div></section>
+
+    <section class="manifesto world-chapter" aria-label="A guiding idea" data-world-chapter="1">
+      <div class="wrap manifesto-inner">
+        <p class="mono-label section-index">A THOUGHT TO BUILD FROM <span>01 / 06</span></p>
+        <h2 class="manifesto-title" data-glitch="Turn curiosity into useful digital experiences."><span class="manifesto-line">Turn curiosity into</span><span class="manifesto-line manifesto-accent">useful digital <em>experiences.</em></span></h2>
+      </div>
+    </section>
+
+    <section class="about-section wrap section-space world-chapter" id="about" data-world-chapter="2">
+      <div class="section-lead">
+        <p class="mono-label section-index">01 / THE PERSON BEHIND THE PIXELS</p>
+        <h2 class="section-heading">A little about<br><em>how I think.</em></h2>
+      </div>
+      <div class="about-body">
+        <p class="about-statement">Student today. Problem solver every day. Still curious about what’s possible.</p>
+        <div class="about-detail-grid">
+          <p>I’m a second-year Information Technology student at <strong>Kongu Engineering College</strong>, learning how ideas become real products — one concept, experiment, and late-night bug fix at a time.</p>
+          <p>I enjoy exploring full-stack development, solving problems, and making technology feel a little more human. I’m especially curious about AI and machine learning. The most satisfying part is taking a rough question to something another person can use; I’m here to learn by building, collaborate with good people, and keep getting better.</p>
+        </div>
+        <div class="about-facts" aria-label="About Vishal">
+          <div><span class="mono-label">STUDYING</span><strong>Information Technology</strong></div>
+          <div><span class="mono-label">AT</span><strong>Kongu Engineering College</strong></div>
+          <div><span class="mono-label">INTERESTS</span><strong>AI · Full-stack · Creative frontend</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="craft-section world-chapter" id="craft" data-world-chapter="3">
+      <div class="wrap section-space">
+        <div class="section-lead craft-lead">
+          <p class="mono-label section-index">02 / WHAT I DO</p>
+          <h2 class="section-heading">Different ways<br>to <em>make things work.</em></h2>
+          <p class="section-note">A growing set of interests, grounded in making practical software.</p>
+        </div>
+        <ol class="craft-list">
+          <li class="craft-item is-active">
+            <button class="craft-toggle" type="button" aria-expanded="true" aria-controls="craft-detail-1"><span class="craft-number">01</span><span class="craft-name">AI &amp; machine learning</span><span class="craft-plus" aria-hidden="true">+</span></button>
+            <div class="craft-detail" id="craft-detail-1"><p>Exploring how intelligent systems can help turn useful data into better decisions.</p><span class="craft-tags">ARTIFICIAL INTELLIGENCE <i>·</i> MACHINE LEARNING</span></div>
+          </li>
+          <li class="craft-item">
+            <button class="craft-toggle" type="button" aria-expanded="false" aria-controls="craft-detail-2"><span class="craft-number">02</span><span class="craft-name">Full-stack development</span><span class="craft-plus" aria-hidden="true">+</span></button>
+            <div class="craft-detail" id="craft-detail-2"><p>Building small web experiences that are accessible, responsive, and pleasant to use.</p><span class="craft-tags">HTML <i>·</i> CSS <i>·</i> JAVASCRIPT</span></div>
+          </li>
+          <li class="craft-item">
+            <button class="craft-toggle" type="button" aria-expanded="false" aria-controls="craft-detail-3"><span class="craft-number">03</span><span class="craft-name">Creative frontend</span><span class="craft-plus" aria-hidden="true">+</span></button>
+            <div class="craft-detail" id="craft-detail-3"><p>Exploring how visual structure and thoughtful motion can make interfaces clear and welcoming.</p><span class="craft-tags">CREATIVE TECHNOLOGY <i>·</i> LEARNING BY MAKING</span></div>
+          </li>
+          <li class="craft-item">
+            <button class="craft-toggle" type="button" aria-expanded="false" aria-controls="craft-detail-4"><span class="craft-number">04</span><span class="craft-name">Project practice</span><span class="craft-plus" aria-hidden="true">+</span></button>
+            <div class="craft-detail" id="craft-detail-4"><p>Applying what I learn to practical projects across location, agriculture, sports, and construction.</p><span class="craft-tags">GEOLOCATION <i>·</i> AGRICULTURE <i>·</i> SPORTS <i>·</i> CONSTRUCTION</span></div>
+          </li>
+          <li class="craft-item">
+            <button class="craft-toggle" type="button" aria-expanded="false" aria-controls="craft-detail-5"><span class="craft-number">05</span><span class="craft-name">Software engineering</span><span class="craft-plus" aria-hidden="true">+</span></button>
+            <div class="craft-detail" id="craft-detail-5"><p>Strengthening foundations in data structures, algorithms, clean code, and problem solving. I keep asking better questions, trying new tools, and learning from people around me.</p><span class="craft-tags">C <i>·</i> JAVA <i>·</i> PYTHON <i>·</i> GIT</span></div>
+          </li>
+        </ol>
+        <div class="toolkit-wrap" id="skills">
+          <p class="mono-label">TECHNICAL SKILLS</p>
+          <ul class="toolkit-list" aria-label="Technical skills">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>C Programming</li><li>Java</li><li>Python</li><li>Git &amp; GitHub</li><li>Responsive Design</li><li>Problem Solving</li><li>UI Thinking</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey-section wrap section-space world-chapter" id="journey" data-world-chapter="4">
+      <div class="section-lead">
+        <p class="mono-label section-index">03 / MY JOURNEY SO FAR</p>
+        <h2 class="section-heading">A timeline of<br><em>learning by doing.</em></h2>
+        <p class="section-note">A student journey, told through the places I learn and the things I have made.</p>
+      </div>
+      <ol class="journey-list">
+        <li class="journey-entry">
+          <span class="journey-marker" aria-hidden="true"></span>
+          <span class="journey-date mono-label">CURRENT</span>
+          <div><h3>Information Technology</h3><p>Second-year student at Kongu Engineering College, building foundations in software and exploring AI and machine learning.</p></div>
+          <span class="journey-kind">EDUCATION</span>
+        </li>
+        <li class="journey-entry">
+          <span class="journey-marker" aria-hidden="true"></span>
+          <span class="journey-date mono-label">PROJECTS</span>
+          <div><h3>From ideas to useful tools</h3><p>GeoSense, AgriNex, RSA Bookings and Gurubaran Builders explore location, agriculture, sports bookings and construction accounts.</p></div>
+          <span class="journey-kind">BUILDING</span>
+        </li>
+        <li class="journey-entry">
+          <span class="journey-marker" aria-hidden="true"></span>
+          <span class="journey-date mono-label">LIVE ON THE WEB</span>
+          <div><h3>Learning to ship</h3><p>Deploying project work and maintaining a live portfolio has added cloud hosting and server configuration to the learning process.</p></div>
+          <span class="journey-kind">DEPLOYMENT</span>
+        </li>
+      </ol>
+    </section>
+
+    <section class="work-section world-chapter" id="work" data-world-chapter="5">
+      <div class="wrap section-space">
+        <div class="section-lead work-lead">
+          <p class="mono-label section-index">04 / SELECTED WORK</p>
+          <h2 class="section-heading">Built to solve<br><em>something real.</em></h2>
+          <p class="section-note">Four projects, each with its own problem, people and practical details.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-row">
+            <a class="project-visual project-scene scene-host magnetic poster-geosense" href="https://geosense-new.onrender.com/savelocation.html" target="_blank" rel="noreferrer" aria-label="Open GeoSense project" data-scene="geosense">
+              <div class="scene-poster" aria-hidden="true"><span class="poster-map-grid"></span><span class="poster-route"></span><span class="poster-location"></span><span class="poster-destination"></span></div>
+              <div class="scene-hud geo-hud" aria-hidden="true"><span class="scene-index">GEO / 01</span><div><span>ROUTE TO SAVED STOP</span><strong data-scene-distance>2.40 km</strong></div><span class="scene-state" data-scene-state>ROUTE PREVIEW</span></div>
+              <span class="image-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-copy"><div class="project-meta mono-label"><span>PROJECT / 01</span><span>GEOLOCATION · WEB APP</span></div><h3 data-glitch="GeoSense">GeoSense</h3><p>A location-aware travel tool for saving favorite stops and setting proximity alerts with sound and screen wake-lock support.</p><ul class="project-tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Local storage</li></ul><a class="project-outbound" href="https://geosense-new.onrender.com/savelocation.html" target="_blank" rel="noreferrer">Visit GeoSense <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-row project-row-reverse">
+            <a class="project-visual project-scene scene-host magnetic poster-agrinex" href="https://agrinex-w4fk.onrender.com/" target="_blank" rel="noreferrer" aria-label="Open AgriNex project" data-scene="agrinex">
+              <div class="scene-poster" aria-hidden="true"><span class="poster-fields"></span><span class="poster-supply-route"></span><span class="poster-farm-node"></span><span class="poster-market-node"></span><span class="poster-graph"></span></div>
+              <div class="scene-hud agri-hud" aria-hidden="true"><span class="scene-index">FARM → MARKET</span><div><span>DIRECT AGRICULTURAL TRADE</span><strong>DEMAND / SUPPLY</strong></div><span class="scene-state">MARKET FLOW</span></div>
+              <span class="image-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-copy"><div class="project-meta mono-label"><span>PROJECT / 02</span><span>AGRITECH · MARKETPLACE</span></div><h3 data-glitch="AgriNex">AgriNex</h3><p>A direct-trade agriculture platform connecting farmers and buyers through mandi benchmarks, stakeholder portals, bidding and escrow-focused trade flows.</p><ul class="project-tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Fetch API</li></ul><a class="project-outbound" href="https://agrinex-w4fk.onrender.com/" target="_blank" rel="noreferrer">Visit AgriNex <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-row">
+            <a class="project-visual project-scene scene-host magnetic poster-rsa" href="https://rsabookings.gurubaranbuilders.co.in/" target="_blank" rel="noreferrer" aria-label="Open RSA Bookings project" data-scene="rsa">
+              <div class="scene-poster" aria-hidden="true"><span class="poster-court"><i></i><b></b><em></em></span><span class="poster-net"></span><span class="poster-flight"></span><span class="poster-shuttle"></span></div>
+              <div class="scene-hud rsa-hud" aria-hidden="true"><span class="scene-index">RSA / COURT 01</span><div><span>BOOKING SLOTS</span><strong class="booking-slots"><i>OPEN</i><i>OPEN</i><i class="is-selected">SELECTED</i><i>OPEN</i></strong></div><span class="scene-state" data-scene-state>CHOOSE A COURT</span></div>
+              <span class="image-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-copy"><div class="project-meta mono-label"><span>PROJECT / 03</span><span>SPORTS · BOOKING FLOW</span></div><h3 data-glitch="RSA Bookings">RSA Bookings</h3><p>A court reservation experience for Rainbow Sports Academy. Players can choose a date, time, court and player count to request a session.</p><ul class="project-tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Fetch API</li></ul><a class="project-outbound" href="https://rsabookings.gurubaranbuilders.co.in/" target="_blank" rel="noreferrer">Visit RSA Bookings <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-row project-row-reverse">
+            <a class="project-visual project-scene scene-host magnetic poster-gurubaran" href="https://accounts.gurubaranbuilders.co.in//" target="_blank" rel="noreferrer" aria-label="Open Gurubaran Builders project" data-scene="gurubaran">
+              <div class="scene-poster" aria-hidden="true"><span class="poster-building"><i></i><b></b><em></em></span><span class="poster-building-glow"></span></div>
+              <div class="scene-hud build-hud" aria-hidden="true"><span class="scene-index">STRUCTURAL MODEL / 04</span><div><span>MODEL ASSEMBLY</span><strong data-scene-level>LEVEL 01 / 04</strong></div><span class="build-progress"><i data-scene-progress></i></span></div>
+              <span class="image-open" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-copy"><div class="project-meta mono-label"><span>PROJECT / 04</span><span>CONSTRUCTION · ERP</span></div><h3 data-glitch="Gurubaran Builders">Gurubaran Builders</h3><p>A personal construction accounts portal with secure sign-in and an overview for sites, workforce, outstanding balances and weekly labor costs.</p><ul class="project-tech" aria-label="Technologies"><li>HTML</li><li>Tailwind CSS</li><li>JavaScript</li><li>Lucide</li></ul><a class="project-outbound" href="https://accounts.gurubaranbuilders.co.in//" target="_blank" rel="noreferrer">Visit Gurubaran Builders <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="milestones-section wrap section-space world-chapter" id="achievements" data-world-chapter="6">
+      <div class="section-lead">
+        <p class="mono-label section-index">05 / MILESTONES &amp; LEARNING</p>
+        <h2 class="section-heading">Small steps.<br><em>Real momentum.</em></h2>
+        <p class="section-note">Five moments that reflect participation, curiosity and continued learning.</p>
+      </div>
+      <ol class="milestone-list">
+        <li class="milestone-item milestone-featured"><span class="milestone-number">01</span><div class="milestone-main"><span class="mono-label">STARTUP PITCH · JARVIS'26</span><h3>AgriNex</h3><p>Presented AgriNex, an idea for connecting farmers directly with buyers through a transparent digital agriculture marketplace.</p><span class="milestone-context">Mobile Application Development Club · Kongu Engineering College</span></div><span class="milestone-year">2026</span></li>
+        <li class="milestone-item"><span class="milestone-number">02</span><div class="milestone-main"><span class="mono-label">24-HOUR NATIONAL HACKATHON</span><h3>HackITon'26</h3><p>Participated in the national-level hackathon hosted by KPR Institute of Engineering and Technology with IEEE student communities.</p></div><span class="milestone-year">OCT 2026</span></li>
+        <li class="milestone-item"><span class="milestone-number">03</span><div class="milestone-main"><span class="mono-label">NPTEL · ELITE</span><h3>Human Computer Interaction</h3><p>Completed the 12-week online certification course with a consolidated score of 91%.</p></div><span class="milestone-year">JAN — APR 2026</span></li>
+        <li class="milestone-item"><span class="milestone-number">04</span><div class="milestone-main"><span class="mono-label">FLUTTER WORKSHOP</span><h3>Mobile App Development</h3><p>Participated in a hands-on Flutter workshop organized by the Mobile Application Development Club.</p><span class="milestone-context">Kongu Engineering College</span></div><span class="milestone-year">AUG 2026</span></li>
+        <li class="milestone-item"><span class="milestone-number">05</span><div class="milestone-main"><span class="mono-label">30-HOUR COURSE</span><h3>Cloud Essentials</h3><p>Completed a 30-hour nonformal course offered by the Department of Information Technology.</p><span class="milestone-context">Kongu Engineering College</span></div><span class="milestone-year">2026</span></li>
+      </ol>
+    </section>
+
+    <section class="motto-section world-chapter" data-world-chapter="7">
+      <div class="wrap motto-inner">
+        <p class="mono-label section-index">A PRINCIPLE I WANT TO KEEP</p>
+        <h2 data-glitch="Build what helps. Learn from what doesn't." aria-label="Build what helps. Learn from what doesn't."><span aria-hidden="true"><span class="motto-word">Build</span> <span class="motto-word">what</span><br><em><span class="motto-word">helps.</span></em> <span class="motto-word">Learn</span> <span class="motto-word">from</span><br><span class="motto-word">what</span> <em><span class="motto-word">doesn't.</span></em></span></h2>
+        <p class="motto-caption">Stay curious. Make the next version more useful.</p>
+      </div>
+    </section>
+
+    <section class="contact-section world-chapter" id="contact" data-world-chapter="8">
+      <div class="wrap contact-inner">
+        <p class="mono-label section-index">06 / HAVE AN IDEA?</p>
+        <h2 data-glitch="Let's make something useful.">Let's make<br><em>something useful.</em></h2>
+        <p class="contact-intro">Open to learning, collaborating and connecting. Say hello and tell me what you are curious about.</p>
+        <a class="contact-email magnetic" href="mailto:vishalragav51053@gmail.com">vishalragav51053@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="contact-socials" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/vishal-ragav-vs-17783539a" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/VISHAL51053" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="mailto:vishalragav51053@gmail.com">Email <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="wrap"><span>© <span id="year"></span> VISHAL RAGAV VS · MADE WITH CURIOSITY</span><a class="top" href="#home">BACK TO TOP ↑</a></footer>
+
+  <footer class="site-footer wrap"><span>© <span id="year"></span> VISHAL RAGAV VS · MADE WITH CURIOSITY</span><a href="#home">BACK TO THE TOP ↑</a></footer>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), {threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = (returnFocus = false) => {
+      if (!menuToggle || !mobileMenu) return;
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open menu');
+      mobileMenu.hidden = true;
+      document.body.classList.remove('menu-open');
+      if (returnFocus) menuToggle.focus();
+    };
+    menuToggle?.addEventListener('click', () => {
+      const open = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!open));
+      menuToggle.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+      mobileMenu.hidden = open;
+      document.body.classList.toggle('menu-open', !open);
+    });
+    mobileMenu?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => closeMenu()));
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menuToggle?.getAttribute('aria-expanded') === 'true') closeMenu(true);
+    });
+    window.matchMedia('(min-width: 761px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 
+    const craftToggles = [...document.querySelectorAll('.craft-toggle')];
+    craftToggles.forEach(toggle => toggle.addEventListener('click', () => {
+      const current = toggle.closest('.craft-item');
+      const wasActive = current.classList.contains('is-active');
+      document.querySelectorAll('.craft-item').forEach(item => {
+        const button = item.querySelector('.craft-toggle');
+        const active = !wasActive && item === current;
+        item.classList.toggle('is-active', active);
+        button.setAttribute('aria-expanded', String(active));
+      });
+    }));
+    document.documentElement.classList.add('js-ready');
+
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+    }
   </script>
 </body>
 </html>
